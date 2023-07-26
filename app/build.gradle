@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.mobimarte.metaquotesassignment'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.mobimarte.metaquotesassignment"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.3.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+
+
+    // Lifecycle components
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.4.1'
+
+
+    // Room components
+    def room_version = "2.4.2"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    androidTestImplementation "androidx.room:room-testing:$room_version"
+
+
+    implementation 'com.android.volley:volley:1.2.1'
+
+}

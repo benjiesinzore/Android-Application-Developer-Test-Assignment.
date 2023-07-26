@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MetaQuotesAssignment</string>
+    <string name="text_file_url">TEXT FILE URL</string>
+    <string name="line_selection_filter">LINE SELECTION FILTER (optional)</string>
+    <string name="process">PROCESS</string>
+
+    <string name="res_success">success</string>
+
+    <string name="res_error">failed</string>
+
+    <string name="back_slash">/</string>
+
+    <string name="error_mess">An error occurred while processing you data, please try again later.</string>
+
+    <string name="file_name">sample.txt</string>
+
+    <string name="file_type">text/plain</string>
+
+    <string name="file_name_res">results.log</string>
+
+    <string name="file_name_logs">exceptions.log</string>
+
+    <string name="add_url_act_ttle">Enters File URL</string>
+
+    <string name="view_data_act_ttle">View Processed Data</string>
+    <string name="top_bar_title">Top Bar Title</string>
+
+    <string name="provide_storage">"Please provide a storage media and try again."</string>
+
+    <string name="permission_denied">Permission Denied.</string>
+
+    <string name="permission_granted">Permission Granted.</string>
+    <string name="text_file_url_low_caps">*text file url</string>
+    <string name="line_selection_filter_low_caps">line selection filter</string>
+    <string name="please_wait_a_moment">Please wait a moment...</string>
+    <string name="metaquotes_assignment">MetaQuotes Assignment</string>
+</resources>
